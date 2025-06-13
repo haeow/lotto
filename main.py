@@ -20,3 +20,10 @@ def to_onehot(y):
         for n in row:
             onehot[i, n - 1] = 1
     return onehot
+
+def build_model(input_shape):
+    model = Sequential()
+    model.add(LSTM(128, input_shape=input_shape))
+    model.add(Dense(45, activation='sigmoid'))
+    model.compile(optimizer='adam', loss='binary_crossentropy')
+    return model
