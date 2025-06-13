@@ -13,3 +13,10 @@ def load_data(xlsx_path, sequence_length=5):
         X.append(data[i:i+sequence_length])
         y.append(data[i+sequence_length])
     return np.array(X), np.array(y)
+
+def to_onehot(y):
+    onehot = np.zeros((len(y), 45))
+    for i, row in enumerate(y):
+        for n in row:
+            onehot[i, n - 1] = 1
+    return onehot
