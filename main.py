@@ -33,7 +33,7 @@ def train_model(xlsx_path):
     y_onehot = to_onehot(y)
 
     model = build_model((X.shape[1], X.shape[2]))
-    model.fit(X, y_onehot, epochs=20, batch_size=16)
+    model.fit(X, y_onehot, epochs=10000, batch_size=16)
     model.save("lotto_model.h5")
     print("✅ 모델 학습 완료 및 저장")
     
