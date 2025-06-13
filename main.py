@@ -57,3 +57,12 @@ def predict_numbers(xlsx_path):
 
     print("🎯 추천 번호 (6개):", main_numbers)
     print("🎁 보너스 번호:", bonus_number)
+    
+if __name__ == "__main__":
+    path = "lotto.xlsx"
+
+    # 1. 모델 학습
+    train_model(path)
+
+    # 2. 번호 예측
+    predict_numbers(path)
