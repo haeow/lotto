@@ -47,4 +47,4 @@
 
 ## 📤 출력 사진
 
-![image](https://github.com/user-attachments/assets/019c1fb0-d262-46a4-b56b-e5df84338d4e)
+![image](https://github.com/user-attachments/assets/17d9fc5a-33cd-4a51-b48e-60844a203e2d)
