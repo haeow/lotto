@@ -12,11 +12,8 @@
 
 ## 📁 구성
 
-- `preprocessing.py`: 데이터 로딩 및 시퀀스 생성
-- `model.py`: LSTM 모델 구조 정의
-- `train.py`: 모델 학습 실행
-- `predict.py`: 예측 및 보너스 번호 후처리
-- `utils.py`: one-hot 변환 등 보조 함수
+- `main.py`: 전체 로또 예측 기능이 담긴 메인 파일입니다.
+- `lotto.xlsx`: 과거 로또 번호 데이터 (사용자 제공)
 
 ---
 
@@ -34,9 +31,9 @@
 
 - `lotto.xlsx(엑셀 형식)` 파일
 - 형식 예시:
-- 회차,번호1,번호2,번호3,번호4,번호5,번호6,보너스
-- 1,10,23,29,33,37,40,16
-- 2,9,13,21,25,32,42,2
+- 번호1,번호2,번호3,번호4,번호5,번호6,보너스
+- 10,23,29,33,37,40,16
+- 9,13,21,25,32,42,2
 
 ---
 
@@ -51,17 +48,3 @@
 ## 📤 출력 사진
 
 ![image](https://github.com/user-attachments/assets/019c1fb0-d262-46a4-b56b-e5df84338d4e)
-
----
-
-## 🏗️ 실행 방법
-
-```bash
-# 라이브러리 설치
-pip install -r requirements.txt
-
-# 모델 학습
-python train.py
-
-# 예측 실행
-python predict.py
