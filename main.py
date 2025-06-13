@@ -6,7 +6,7 @@ import os
 
 def load_data(xlsx_path, sequence_length=5):
     df = pd.read_excel(xlsx_path)
-    data = df.iloc[:, 1:7].values  # 번호1~6만 사용
+    data = df.iloc[:, 0:6].values  # 번호1~6만 사용
 
     X, y = [], []
     for i in range(len(data) - sequence_length):
